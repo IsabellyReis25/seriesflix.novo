@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Recomendações incríveis de séries para você maratonar!">
+  <title>SeriesFlix - Recomendações de Séries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" id="main-css">
+</head>
+<body>
+
+  <audio id="background-music" loop preload="none">
+    <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <header class="topbar" id="topbar">
+    <a href="#inicio" class="logo" aria-label="SeriesFlix - início">
+      <span class="logo-icon">🎬</span>
+      <span class="logo-text">SeriesFlix</span>
+    </a>
+
+    <nav class="navbar" aria-label="Séries">
+      <ul class="nav-list">
+        <li><a href="#the-chosen">The Chosen</a></li>
+        <li><a href="#peaky-blinders">Peaky Blinders</a></li>
+        <li><a href="#prison-break">Prison Break</a></li>
+        <li><a href="#bridgerton">Bridgerton</a></li>
+        <li><a href="#stranger-things">Stranger Things</a></li>
+        <li><a href="#supernatural">Supernatural</a></li>
+      </ul>
+    </nav>
+
+    <div class="topbar-actions">
+      <a href="#comparar" class="icon-btn compare-btn" title="Comparar com site sem design"><span class="icon">⚖️</span><span class="label">Comparar</span></a>
+      <button id="music-toggle" class="icon-btn" aria-label="Tocar música" title="Música">
+        <span class="icon">🎵</span><span class="label" id="music-status">Música</span>
+      </button>
+      <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema" title="Tema">
+        <span class="icon" id="theme-icon">🌙</span><span class="label" id="theme-status">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== DESTAQUE PRINCIPAL ===== -->
+  <section class="hero" id="inicio">
+    <img class="hero-bg" src="img/peaky-blinders.jpg" alt="">
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <span class="hero-badge"><b>S</b> SÉRIE EM DESTAQUE</span>
+      <h1 class="hero-title">Peaky Blinders</h1>
+      <div class="hero-meta">
+        <span class="match">98% relevante</span>
+        <span>2013</span>
+        <span class="age">16</span>
+        <span>6 temporadas</span>
+        <span class="hd">HD</span>
+      </div>
+      <p class="hero-text">Birmingham, 1919. Tommy Shelby e sua gangue sobem ao poder no submundo britânico do pós-guerra. Estilo, estratégia e personagens inesquecíveis.</p>
+      <div class="hero-buttons">
+        <a href="https://www.youtube.com/watch?v=svmIUWMVo2Y" target="_blank" rel="noopener noreferrer" class="btn btn-play">▶ Assistir Trailer</a>
+        <a href="#series" class="btn btn-info">ⓘ Ver todas as séries</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="main-content">
+
+    <!-- ===== LISTA DE SÉRIES ===== -->
+    <section class="series-section" id="series">
+      <div class="section-head">
+        <h2 class="section-title">Séries Recomendadas</h2>
+        <div class="filters" role="group" aria-label="Filtrar por gênero">
+          <button class="chip active" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="Drama">Drama</button>
+          <button class="chip" data-filter="Crime">Crime</button>
+          <button class="chip" data-filter="Suspense">Suspense</button>
+          <button class="chip" data-filter="Romance">Romance</button>
+          <button class="chip" data-filter="Sci-Fi">Sci-Fi</button>
+        </div>
+      </div>
+
+      <div class="series-grid">
+
+        <article class="series-card" id="the-chosen" data-genres="Drama Histórico">
+          <div class="card-image">
+            <img src="img/the-chosen.jpg" alt="The Chosen - Série dramática" loading="lazy">
+            <span class="rank">1</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-icon">✨</span>
+              <h3>The Chosen</h3>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Drama</span>
+              <span class="tag">Histórico</span>
+            </div>
+            <p class="card-description">A vida de Jesus Cristo pela perspectiva das pessoas que o conheceram. Uma produção emocionante e inspiradora.</p>
+            <a href="https://www.youtube.com/watch?v=2Y9Wc_waDNs" target="_blank" rel="noopener noreferrer" class="watch-btn">▶ Assistir Trailer</a>
+          </div>
+        </article>
+
+        <article class="series-card" id="peaky-blinders" data-genres="Crime Drama">
+          <div class="card-image">
+            <img src="img/peaky-blinders.jpg" alt="Peaky Blinders - Crime e drama" loading="lazy">
+            <span class="rank">2</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-icon">🎩</span>
+              <h3>Peaky Blinders</h3>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Crime</span>
+              <span class="tag">Drama</span>
+            </div>
+            <p class="card-description">A gangue liderada por Tommy Shelby ascende no submundo britânico pós-Primeira Guerra. Ação, drama e estilo.</p>
+            <a href="https://www.youtube.com/watch?v=svmIUWMVo2Y" target="_blank" rel="noopener noreferrer" class="watch-btn">▶ Assistir Trailer</a>
+          </div>
+        </article>
+
+        <article class="series-card" id="prison-break" data-genres="Suspense Ação">
+          <div class="card-image">
+            <img src="img/prison-break.jpg" alt="Prison Break - Suspense e ação" loading="lazy">
+            <span class="rank">3</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-icon">🔒</span>
+              <h3>Prison Break</h3>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Suspense</span>
+              <span class="tag">Ação</span>
+            </div>
+            <p class="card-description">Um engenheiro elabora um plano genial para tirar o irmão, condenado injustamente, da prisão. Suspense a cada episódio!</p>
+            <a href="https://www.youtube.com/watch?v=AL9zLctDJaU" target="_blank" rel="noopener noreferrer" class="watch-btn">▶ Assistir Trailer</a>
+          </div>
+        </article>
+
+        <article class="series-card" id="bridgerton" data-genres="Drama Romance">
+          <div class="card-image card-image--fallback">
+            <img src="https://deliriumnerd.com/wp-content/uploads/2022/03/bridgerton-season-2-poster-1170x585.jpeg" alt="Bridgerton - Romance e drama" loading="lazy" onerror="this.remove()">
+            <span class="fallback-title">Bridgerton</span>
+            <span class="rank">4</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-icon">❤️</span>
+              <h3>Bridgerton</h3>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Drama</span>
+              <span class="tag">Romance</span>
+            </div>
+            <p class="card-description">A alta sociedade londrina do século XIX e a família Bridgerton em busca de amor, escândalos e casamentos.</p>
+            <a href="https://www.youtube.com/watch?v=f_HrYWVrwrY" target="_blank" rel="noopener noreferrer" class="watch-btn">▶ Assistir Trailer</a>
+          </div>
+        </article>
+
+        <article class="series-card" id="stranger-things" data-genres="Sci-Fi Terror">
+          <div class="card-image">
+            <img src="img/stranger-things.jpg" alt="Stranger Things - Ficção científica" loading="lazy" class="img-top">
+            <span class="rank">5</span>
+          </div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-icon">👾</span>
+              <h3>Stranger Things</h3>
+            </div>
+            <div class="card-tags">
+              <span class="tag">Sci-Fi</span>
+              <span class="tag">Terror</span>
+            </div>
+            <p class="card-description">Crianças enfrentam forças sobrenaturais e segredos do governo após o sumiço de um amigo. Nostalgia dos anos 80!</p>
+            <a href="https://www.youtube.com/watch?v=b9EkMc79ZSU" target="_blank" rel="noopener noreferrer" class="watch-btn">▶ Assistir Trailer</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="empty-msg" id="empty-msg" hidden>Nenhuma série nesse gênero... ainda! 🍿</p>
+    </section>
+
+    <!-- ===== MARATONA: SUPERNATURAL ===== -->
+    <section class="featured-section" id="supernatural">
+      <img src="img/supernatural.jpg" alt="" class="featured-bg-img">
+      <div class="featured-inner">
+        <img src="img/supernatural.jpg" alt="Pôster de Supernatural" class="featured-poster" loading="lazy">
+        <div class="featured-content">
+          <span class="eyebrow">🔥 Maratona épica</span>
+          <h2 class="featured-title">Supernatural</h2>
+          <p class="featured-description">Quer fugir das séries do momento e maratonar algo com <em>muitas</em> temporadas?</p>
+          <p class="featured-text">
+            Os irmãos <strong>Sam e Dean Winchester</strong> cruzam os Estados Unidos caçando criaturas sobrenaturais e lutando contra o mal. Uma série sobre família, destino, livre-arbítrio e a eterna luta entre o bem e o mal.
+          </p>
+          <div class="featured-stats">
+            <div class="stat"><span class="stat-number">15</span><span class="stat-label">Temporadas</span></div>
+            <div class="stat"><span class="stat-number">327</span><span class="stat-label">Episódios</span></div>
+            <div class="stat"><span class="stat-number">~240h</span><span class="stat-label">De maratona</span></div>
+          </div>
+          <a href="https://www.youtube.com/watch?v=31A0DqX6jHI" target="_blank" rel="noopener noreferrer" class="btn btn-red">▶ Assistir Trailer Épico</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPARAÇÃO: COM CSS x SEM CSS ===== -->
+    <section class="compare-section" id="comparar">
+      <div class="compare-head">
+        <span class="eyebrow">⚖️ Feira técnica</span>
+        <h2 class="section-title">Design faz toda a diferença</h2>
+        <p class="compare-intro">Os dois sites usam <strong>HTML</strong>. A diferença está no <strong>CSS</strong>: cores, fontes, espaçamento, layout e animações. Compare!</p>
+      </div>
+
+      <div class="compare-grid">
+        <div class="compare-card good">
+          <div class="compare-label">✅ Com design</div>
+          <div class="compare-preview good-preview" aria-hidden="true">
+            <div class="mini-bar"><span>SERIESFLIX</span><i></i><i></i><i></i></div>
+            <div class="mini-hero"></div>
+            <div class="mini-cards"><i></i><i></i><i></i></div>
+          </div>
+          <h3>SeriesFlix</h3>
+          <ul class="compare-list">
+            <li>Paleta de cores pensada (preto + vermelho)</li>
+            <li>Fontes do Google Fonts (Bebas Neue + Montserrat)</li>
+            <li>Layout em Grid e Flexbox</li>
+            <li>Animações e efeitos de hover</li>
+            <li>Responsivo: funciona no celular</li>
+            <li>Modo claro e escuro</li>
+          </ul>
+          <button class="btn btn-ghost" id="css-off-btn" type="button">🧪 Desligar o CSS deste site</button>
+        </div>
+
+        <div class="compare-vs">VS</div>
+
+        <div class="compare-card bad">
+          <div class="compare-label">❌ Sem design</div>
+          <div class="compare-preview bad-preview">
+            <iframe src="jogos-vorazes.html" title="Prévia do site Jogos Vorazes" tabindex="-1" loading="lazy"></iframe>
+          </div>
+          <h3>O Tordo · Jogos Vorazes</h3>
+          <ul class="compare-list">
+            <li>Cores sem contraste (azul + verde neon)</li>
+            <li>Fonte padrão do navegador</li>
+            <li>Sem layout: tudo empilhado</li>
+            <li>Imagens distorcidas</li>
+            <li>Links pretos sobre fundo azul</li>
+            <li>Nenhuma responsividade</li>
+          </ul>
+          <a href="jogos-vorazes.html" class="btn btn-red">Ver site Jogos Vorazes →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>🍿 Gostou de alguma série?</h2>
+      <p>Clique nos botões e assista aos trailers no YouTube. Sua próxima maratona começa hoje!</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="logo-text small">SeriesFlix</span>
+      <p>🎬 Site criado por: <strong>Grupo de programação web: EERA</strong></p>
+      <p>📅 05/11/2025 · 💻 Feito com HTML5, CSS3 e JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Botão que aparece quando o CSS está desligado (estilo inline de propósito) -->
+  <button id="css-on-btn" type="button" hidden
+    style="position:fixed;bottom:20px;right:20px;z-index:9999;padding:14px 22px;background:#E50914;color:#fff;border:0;border-radius:6px;font:700 16px Arial,sans-serif;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.4)">
+    ✨ Ligar o CSS de novo
+  </button>
+
+  <script>
+    // ----- Barra superior fica sólida ao rolar -----
+    const topbar = document.getElementById('topbar');
+    const onScroll = () => topbar.classList.toggle('scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // ----- Música -----
+    const music = document.getElementById('background-music');
+    const musicBtn = document.getElementById('music-toggle');
+    const musicStatus = document.getElementById('music-status');
+    music.volume = 0.3;
+    musicBtn.addEventListener('click', () => {
+      if (music.paused) {
+        music.play().catch(() => { musicStatus.textContent = 'Indisponível'; });
+        musicStatus.textContent = 'Pausar';
+        musicBtn.classList.add('on');
+      } else {
+        music.pause();
+        musicStatus.textContent = 'Música';
+        musicBtn.classList.remove('on');
+      }
+    });
+
+    // ----- Tema claro / escuro -----
+    const themeIcon = document.getElementById('theme-icon');
+    const themeStatus = document.getElementById('theme-status');
+    function applyTheme(theme) {
+      const light = theme === 'light';
+      document.body.classList.toggle('light-mode', light);
+      themeIcon.textContent = light ? '☀️' : '🌙';
+      themeStatus.textContent = light ? 'Light' : 'Dark';
+    }
+    let savedTheme = 'dark';
+    try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch (e) {}
+    applyTheme(savedTheme);
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const next = document.body.classList.contains('light-mode') ? 'dark' : 'light';
+      applyTheme(next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+
+    // ----- Filtro por gênero -----
+    const chips = document.querySelectorAll('.chip');
+    const cards = document.querySelectorAll('.series-card');
+    const emptyMsg = document.getElementById('empty-msg');
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      chips.forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      const f = chip.dataset.filter;
+      let visible = 0;
+      cards.forEach(card => {
+        const show = f === 'todos' || card.dataset.genres.split(' ').includes(f);
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      emptyMsg.hidden = visible > 0;
+    }));
+
+    // ----- Experimento: desligar / ligar o CSS -----
+    const css = document.getElementById('main-css');
+    const cssOff = document.getElementById('css-off-btn');
+    const cssOn = document.getElementById('css-on-btn');
+    cssOff.addEventListener('click', () => {
+      css.disabled = true;
+      cssOn.hidden = false;
+      window.scrollTo(0, 0);
+    });
+    cssOn.addEventListener('click', () => {
+      css.disabled = false;
+      cssOn.hidden = true;
+      document.getElementById('comparar').scrollIntoView();
+    });
+  </script>
+
+</body>
+</html>
